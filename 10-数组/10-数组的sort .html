@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        var arr = [2, 3, 1, 4, 5, 18, 7, 32]
+        // 使用 sort 方法给数组排序
+        var res = arr.sort()
+        console.log(res);
+        console.log(arr) // [1, 18, 2, 3, 32, 4, 5, 7]
+
+        //升序
+        var arrAcs = [ 1, 23, 32, 20, 19, 10, 3, 5, 33 ]
+        arr.sort(function (a, b) {
+            return a - b
+        });
+        console.log(arrAcs)
+        var arrDesc = [ 1, 23, 32, 20, 19, 10, 3, 5, 33 ]
+        //降序
+        arrDesc.sort(function (a, b) {
+            return b - a
+        })
+        console.log(arrDesc)
+    </script>
+</body>
+</html>

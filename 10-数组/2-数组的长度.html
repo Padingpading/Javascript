@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        //创建空数组
+        // 数组的 length 属性
+        var arr = [100, 200, 300, 400, 500]
+        // length 获取
+        console.log(arr.length)//5
+        // length 设置
+        // 和原先长度一样, 相当于没有设置
+        arr.length = 5
+        console.log(arr)
+        // 比原先长度大, 用 empty 补齐
+        arr.length = 100
+        console.log(arr)
+        // 比原先长度小, 从后面开始删除数据
+        arr.length = 3
+        console.log(arr)
+    </script>
+</body>
+</html>

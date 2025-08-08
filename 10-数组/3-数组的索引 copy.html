@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        // 数组的 索引 属性
+        var arr = [100, 200, 300, 400, 500]
+        // 索引获取
+        // 获取数组中索引为 2 对应的数据
+        console.log(arr[2])
+        //因为没有索引是100的这个数据，返回的就是undefined
+        console.log(arr[100]) //undefined
+        //索引设置
+        // 因为数组有 [2] 位置, 相当于把 [2] 位置的数据修改了
+        arr[2] = '我是刚来的'
+        console.log(arr)
+        // 因为数组没有 [5] 位置, 相当于添加
+        // 又因为 5 刚好的 length 一样, 就相当于在数组后面追加数据
+        arr[5] = 'hello'
+        console.log(arr)
+        // 因为数组没有 [10] 位置, 相当于添加
+        // 如果只是单纯的添加一个 '世界' 在 [10] 的位置, 那么一共就是 6 个数据,
+        //你设置的最后一个索引又是 [10] , 数组就不对了
+        // 所以, 他为了保证最后一位的索引一定是 length - 1, 从索引 5 ~ 索引9都用 empty 填充
+        // 保证了长度依旧是 11
+        arr[10] = '大家好'
+        console.log(arr) //[100, 200, '我是刚来的', 400, 500, 'hello', empty × 4, '大家好']
+    </script>
+</body>
+</html>
