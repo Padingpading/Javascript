@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+    // Number方法
+    // 1. Number()
+    var s = '123'
+    console.log(typeof s)//string
+    console.log('=============转化后=============')
+    var res = Number(s)
+    console.log(res)
+    console.log(typeof res)//nmber
+    //2、转换费数值类型
+    // 2.1 字符串
+    let s21 =  Number("12aa")
+    var s21Res = Number(s21)
+    console.log(s21Res)//NaN(not a number)
+    console.log(typeof(s21Res))//NaN的类型number
+    // 2.2 布尔值
+    let s22 = true;
+    let s23 = false;
+    console.log(Number(s22))//1
+    console.log(Number(s23))//0
+    //3 undefined
+    let s33;
+    console.log(Number(s33))//NaN
+    //4 null
+    let s41 = null
+    console.log(Number(s41))//0
+  </script>
+</body>
+</html>
